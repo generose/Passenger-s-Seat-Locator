@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<style>
+        form {
+            border: 3px solid #f1f1f1;
+        }
+
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .cancelbtn {
+            width: auto;
+            padding: 10px 18px;
+            background-color: #f44336;
+        }
+
+        .imgcontainer {
+            text-align: center;
+            margin: 24px 0 12px 0;
+        }
+
+        img.avatar {
+            width: 40%;
+            border-radius: 50%;
+        }
+
+        .container {
+            padding: 16px;
+        }
+
+        span.psw {
+            float: right;
+            padding-top: 16px;
+        }
+
+        /* Change styles for span and cancel button on extra small screens */
+        @media screen and (max-width: 300px) {
+            span.psw {
+               display: block;
+               float: none;
+            }
+            .cancelbtn {
+               width: 100%;
+            }
+        }
+        </style>
+<div data-role="page" id="main">
+  <div data-role="header" style="background-color: azure"> 
+<h2>PASSENGER'S SEAT LOCATOR</h2>
+    <form>
+		<style> .indented{
+		  display: block;
+		    margin-top: 1em;
+		    margin-bottom: 1em;
+		    margin-left: 2em;
+		    margin-right: 2em;
+		    text-align: justify;
+    		}
+ 		</style> 
+		<div class="form-group">
+		    <p class="indented"><label for="name">Bus Number</label>
+		    <input type="text" class="form-control" id="busno">
+		  </p></div>
+		  <div class="form-group">
+		     <p class="indented"><label for="dname">Driver's Name:</label>
+		    <input type="text" class="form-control" id="dname">
+		  </p></div>
+		   <div class="form-group">
+		    <p class="indented"><label for="TravelA">Travel Destination:</label>
+		    <input type="text" class="form-control" id="TravelA">
+		  </p></div>
+		  <div class="form-group">
+		     <p class="indented"><label for="date">Date:</label>
+		    <input type="text" class="form-control" id="date">
+		  </p></div>
+		</form>
+	</div>
+<center>	
+<div data-role="footer" style="background-color:azure">
+	<p id="demo"></p>
+		<div id="result">
+		
+		<button style="background-color: #ffcc00" onclick="myFunction()">Travel Now!</button>
+   </div> 
+			  <script>
+			function myFunction()
+			{
+			document.getElementById("result");
+			alert("successfully added"); 
+			window.location.assign("SeatLoc.html");
+			}
+			// 		</script></center>
+</div> 
+</head>
+</form>
+</body>
+</html>
+
+
